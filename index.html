@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adopt A Panda</title>
+    <meta name="description" content="A virtual pet game">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="load()">
+    <header>
+      <h1>
+        Adopt A Panda
+      </h1>
+      <button class="start-button">
+        Start
+      </button>
+    </header>
+
+    <main>
+      <section class="set-name">
+        <label for="petname"><h2>Name Your Pet: </h2></label>
+        <input type="text" id="petname" name="petname">
+        <button class="submit-name">
+          Submit
+        </button>
+      </section>
+      <div class ="game-elements">
+      <section class="pet-image-container">
+         <!-- Replace pet image with your own pet image -->
+        <img class="pet-image" src="https://cdn.glitch.global/fb4904b6-73a4-4827-b6ef-64a38ad1c878/panda.gif?v=1668285960622">
+        <p class="pet-message"></p>
+      </section>
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> coos per min</strong></div>
+        <div>Energy: <strong><span class="energy"></span>%</strong></div>
+        <div class="button-container">
+          <button class="treat-button">
+            Treat
+          </button>
+          <button class="play-button">
+            Play
+          </button>
+          <button class="exercise-button">
+            Exercise
+          </button>
+          <button class="sleep-button">
+            Sleep
+          </button>
+        </div>
+      </section>
+                
+      </div>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous">      
+    </script>
+  </body>
+</html>
